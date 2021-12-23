@@ -1,0 +1,683 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--  -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        Debit Report
+    </title>
+    <!-- <link href="./Debit Report new stamp_files/style.css" type="text/css" rel="stylesheet"> -->
+    <style>
+        Body {
+    scrollbar-arrow-color: #414458;
+    scrollbar-shadow-color: #f5f5f5;
+    scrollbar-face-color: #f5f5f5;
+    scrollbar-highlight-color: #414458;
+    scrollbar-darkshadow-color: #414458;
+}
+
+.PageTitle {
+    FONT-SIZE: 12px;
+    COLOR: #000000;
+    FONT-WEIGHT: bold;
+    TEXT-INDENT: 0px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+span {
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    TEXT-INDENT: 0px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.Menu {
+    FONT-SIZE: 11px;
+    COLOR: #414458;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none;
+}
+
+label {
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    TEXT-INDENT: 0px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.spanTitle {
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-WEIGHT: bold;
+    TEXT-INDENT: 0px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.text {
+    FONT-SIZE: 11px;
+    COLOR: #ffffff;
+    FONT-WEIGHT: bold;
+    TEXT-INDENT: 0px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.text_logo {
+    FONT-SIZE: 10px;
+    COLOR: #ffffff;
+    FONT-WEIGHT: bold;
+    TEXT-INDENT: 0px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.text1 {
+    FONT-SIZE: 11px;
+    COLOR: #666666;
+    FONT-WEIGHT: bold;
+    TEXT-INDENT: 0px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.text2 {
+    FONT-SIZE: 10px;
+    COLOR: #666666;
+    TEXT-INDENT: 0px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.text3 {
+    FONT-SIZE: 10px;
+    COLOR: #ffffff;
+    TEXT-INDENT: 0px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.text4 {
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    TEXT-INDENT: 0px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.text5 {
+    FONT-SIZE: 11px;
+    COLOR: #cccccc;
+    font-weight: bold;
+    TEXT-INDENT: 0px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.textUW {
+    FONT-SIZE: 10px;
+    COLOR: #000000;
+    TEXT-INDENT: 0px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+.BlackSig {
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-WEIGHT: bold;
+    TEXT-INDENT: 0px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.WhiteSig {
+    FONT-SIZE: 13px;
+    COLOR: #C0C0C0;
+    FONT-WEIGHT: bold;
+    TEXT-INDENT: 0px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+P {
+    FONT-SIZE: 11px;
+    COLOR: #808080;
+    TEXT-INDENT: 0px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+A:link {
+    FONT-SIZE: 11px;
+    COLOR: #414458;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none;
+}
+
+A:visited {
+    FONT-SIZE: 11px;
+    COLOR: #414458;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none;
+}
+
+A:hover {
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: underline;
+}
+
+A.White:link {
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    COLOR: ##eae9e9;
+    FONT-SIZE: 11px;
+    font-weight: bold;
+}
+
+A.White:visited {
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    COLOR: #cccccc;
+    FONT-SIZE: 11px;
+    font-weight: bold;
+}
+
+A.White:hover {
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    COLOR: #ffffff;
+    FONT-SIZE: 11px;
+    font-weight: bold;
+}
+
+A.White:active {
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    COLOR: #cccccc;
+    FONT-SIZE: 11px;
+    font-weight: bold;
+}
+
+.Input1 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+Input {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+Textarea {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    width: 300;
+    height: 40;
+}
+
+select {
+    font-size: 12px;
+    width: 170;
+}
+
+.Table-TD-Rep {
+    text-align: right;
+    border: black 1px solid;
+}
+
+.tabular-cell {
+    display: table;
+    border: solid 1px Black;
+    color: Black;
+    font-size: 8pt;
+    font-family: Simplified Arabic;
+    margin: 0px;
+    padding: 0px;
+    direction: rtl;
+}
+
+.MyTd {
+    display: table;
+    border-top: solid 1px Black;
+    color: Black;
+    font-size: 8pt;
+    font-family: Simplified Arabic;
+    margin: 0px;
+    padding: 0px;
+    direction: rtl;
+}
+
+.Rep-Font-paragraph {
+    color: Black;
+    font-size: 10pt;
+    font-family: Simplified Arabic;
+    font-weight: bold;
+    direction: rtl;
+}
+
+.Rep-Table {
+    border-width: 1px 1px 1px 1px;
+    border-spacing: 0px;
+    border-style: solid solid solid solid;
+    border-color: black black black black;
+    border-collapse: separate;
+    background-color: white;
+    font-size: 10px;
+}
+
+.Rep-td {
+    border-width: 1px 1px 1px 1px;
+    padding: 1px 1px 1px 1px;
+    border-style: inset inset inset inset;
+    border-color: black black black black;
+    background-color: white;
+    -moz-border-radius: 0px 0px 0px 0px;
+}
+
+td {
+    padding-left: 3px;
+}
+
+.textcard {
+    FONT-SIZE: 10px;
+    COLOR: #000000;
+    TEXT-INDENT: 0px;
+    FONT-FAMILY: arial;
+    FONT-WEIGHT: bold;
+}
+
+.textcardForDate {
+    FONT-SIZE: 10px;
+    COLOR: #000000;
+    TEXT-INDENT: 0px;
+    FONT-FAMILY: arial;
+    FONT-WEIGHT: bold;
+}
+
+.textDebit {
+    FONT-SIZE: 10px;
+    COLOR: #000000;
+    FONT-WEIGHT: bold;
+    TEXT-INDENT: 0px;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.textDebitheader {
+    FONT-SIZE: 18px;
+    COLOR: #000000;
+    /*FONT-WEIGHT: bold;*/
+    TEXT-INDENT: 0px;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+.textInvoice {
+    FONT-SIZE: 20px;
+    COLOR: #000000;
+    FONT-WEIGHT: bold;
+    TEXT-INDENT: 0px;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+    </style>
+    <style type="text/css">
+        .auto-style2 {
+            height: 18px;
+        }
+
+        .auto-style3 {
+            width: 15%;
+            height: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" action="" id="form1">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                value="/wEPDwUJODI5NTc2MDE2D2QWAgIDD2QWAgIBDxYCHgdWaXNpYmxlaGRk5z8FzgaQc7MM86RGclLv7noEMAO5LGdGyU2vBuCLXPo=">
+        </div>
+
+        <div class="aspNetHidden">
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="475EC003">
+        </div>
+        <div>
+            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="height: 100%" align="center">
+                <tbody>
+                    <tr>
+                        <td align="right" style="padding-right: 55px;">
+                            </td>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="98%" align="center"
+                                class="textDebit">
+                                <tbody>
+                                    <tr>
+
+                                        <td align="center" class="textInvoice">Tax Invoice</td>
+                                    </tr>
+                                    <tr>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td style="height: 40px"></td>
+
+                                    </tr>
+                                    <!-- Head body -->
+                                    <tr>
+                                        <td align="center">
+                                            <table cellpadding="1" cellspacing="1" border="0" width="95%"
+                                                style="text-align: left" class="textDebit">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Company VAT Number :
+                                                        </td>
+                                                        <td>
+                                                            <div class='Company-vat'></div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>Invoice Type
+                                                        </td>
+                                                        <td style="width: 120px" align="right">Debit Memo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Participant :
+                                                        </td>
+                                                        <td>
+                                                            <div class='Participant'></div>
+                                                        </td>
+                                                        <td style="width: 20px"></td>
+                                                        <td>Date:
+                                                        </td>
+                                                        <td style="width: 120px" align="right">
+                                                            <div class='Date'></div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Address :
+                                                        </td>
+                                                        <td>
+                                                            <div class='Address'></div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>Voucher No :
+                                                        </td>
+                                                        <td align="right">
+                                                            <div class='Voucher-no'></div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Broker :
+                                                        </td>
+                                                        <td>
+                                                            <div class='Broker'></div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>Customer ID :
+                                                        </td>
+                                                        <td align="right">
+                                                            <div class='Customer-id'></div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Tax Registration Number:</td>
+                                                        <td>
+                                                            <div class='Customer-vat'></div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>Account No :
+                                                        </td>
+                                                        <td align="right">
+                                                            <div class='Account-no'></div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>Department :
+                                                        </td>
+                                                        <td align="right">Motor
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">Please note that we have DEBITED your account as
+                                                            follows :
+                                                        </td>
+
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="height: 10px"></td>
+
+                                    </tr>
+                                    <!-- End Head body -->
+
+                                    <!-- Main body -->
+                                    <tr>
+                                        <td align="center">
+                                            <table cellpadding="3" cellspacing="0" border="0" width="95%"
+                                                style="text-align: left; border-right: #000000 1px solid; border-top: #000000 1px solid; border-left: #000000 1px solid; border-bottom: #000000 1px solid; padding-right: 2px; padding-left: 2px; padding-bottom: 2px; margin: 2px; padding-top: 2px;"
+                                                class="textDebit">
+
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="5"
+                                                            style="width: 85%; font-size: 12px; background-color: gainsboro; border-bottom: #000000 1px solid;">
+                                                            &nbsp;Description</td>
+                                                        <td style="font-size: 12px; width: 15%; background-color: gainsboro; border-left: #000000 1px solid; border-bottom: #000000 1px solid;"
+                                                            align="right">Amount (BHD)</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td colspan="5" style="width: 85%">&nbsp; Being Renewal
+                                                            Contribution For Motor Third Party Liability Takaful Policy
+                                                            No <div class='Policy-number'></div>
+                                                            Endorsement No. <div class='Endorsement-number'></div>
+                                                        </td>
+
+                                                        <td align="right"
+                                                            style="border-left: #000000 1px solid; width: 15%;">
+                                                            <div class='Amount'></div> &nbsp;
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 18%;">&nbsp;Policy Type :</td>
+                                                        <td colspan="4" style="height: 13px">
+                                                            <div class='Policy-type'></div>
+                                                        </td>
+                                                        <td style="border-left: #000000 1px solid; width: 15%;">&nbsp;
+                                                        </td>
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;Period of Cover :</td>
+                                                        <td colspan="4">From <div class='From-date'></div> To <div
+                                                                class='To-date'></div>
+                                                        </td>
+                                                        <td style="border-left: #000000 1px solid;">&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="5">&nbsp;Vehicle Details :-</td>
+                                                        <td style="border-left: #000000 1px solid;">&nbsp;</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>&nbsp;Make : &nbsp; </td>
+                                                        <td style="width: 15%">
+                                                            <div class='Make'></div>
+                                                        </td>
+                                                        <td align="right" style="width: 17%">Registration No :&nbsp;
+                                                        </td>
+                                                        <td colspan="2">
+                                                            <div class='Registration-No'></div>
+                                                        </td>
+
+                                                        <td style="border-left: #000000 1px solid;" colspan="3">&nbsp;
+                                                        </td>
+
+                                                    </tr>
+
+
+                                                    <tr>
+                                                        <td>&nbsp;Type : &nbsp; </td>
+                                                        <td style="width: 20%">
+                                                            <div class='Vehicle-type'></div>
+                                                        </td>
+                                                        <td align="right">Chassis No :&nbsp; </td>
+                                                        <td colspan="2">
+                                                            <div class='Chassis'></div>
+                                                        </td>
+
+                                                        <td style="border-left: #000000 1px solid;" colspan="3"></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" style="height: 30px">&nbsp;RSA : &nbsp; </td>
+                                                        <td valign="top" style="width: 20%">
+                                                            <div class='RSA'></div>
+                                                        </td>
+                                                        <td align="right">&nbsp; </td>
+                                                        <td colspan="2">&nbsp; </td>
+                                                        <td style="border-left: #000000 1px solid;" colspan="3">&nbsp;
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr id="TrDiscount">
+                                                        <td colspan="5" align="right" style="padding-right: 66px">&nbsp;
+                                                        </td>
+                                                        <td style="border-left: #000000 1px solid;" align="right">&nbsp;
+                                                        </td>
+                                                    </tr>
+
+
+
+
+
+
+                                                    <tr>
+                                                        <td colspan="5" align="left" class="auto-style2">&nbsp;Total
+                                                            Before VAT :</td>
+                                                        <td align="right" style="border-left: #000000 1px solid; "
+                                                            class="auto-style3">
+                                                            <div class='Total-before-vat'></div>&nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="left" class="auto-style2">&nbsp;Value Added Tax :
+                                                        </td>
+                                                        <td valign="top" class="auto-style2">
+                                                            <div class='Vat-percentage'></div>% &nbsp;
+                                                        </td>
+                                                        <td colspan="3" align="left" class="auto-style2">
+                                                            &nbsp;&nbsp;&nbsp;</td>
+                                                        <td align="right" style="border-left: #000000 1px solid; "
+                                                            class="auto-style3">
+                                                            <div class='Total-after-vat'></div>&nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="5" align="left"
+                                                            style="border-top: #000000 1px solid; border-bottom: #000000 1px solid;">
+                                                            &nbsp;Total Due :</td>
+
+                                                        <td align="right"
+                                                            style="border-left: #000000 1px solid; border-bottom: #000000 1px solid; border-top: #000000 1px solid">
+                                                            <div class='Total-due'></div>&nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="6">&nbsp;<div class='Amount-in-words'></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center"></td>
+                                    </tr>
+
+                                    <!-- End Main body -->
+
+                                    <tr>
+                                        <td></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td align="center">
+                                            <table cellpadding="0" cellspacing="0" border="0" width="95%"
+                                                class="textDebit">
+
+                                                <tbody>
+                                                    <tr>
+
+                                                        <td colspan="3" align="right">
+                                                            <br>
+                                                            For Company</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="3" style="height: 75px" align="right">                                                            
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="left">Printed By :&nbsp; <div class='Printed-by'>
+                                                            </div>
+                                                        </td>
+                                                        <td align="right"></td>
+                                                        <td style="width: 15%"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="3" style="height: 25px"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">
+
+                                            <p class="MsoFooter">
+                                                <span lang="EN-GB"
+                                                    style="font-size: 8.0pt; font-family: HelveticaNeueLT Pro 45 Lt,sans-serif; mso-bidi-font-family: Arial; color: #003468; mso-ansi-language: EN-GB; mso-no-proof: yes">xxxxx
+                                                    Company<br>
+                                                </span>
+                                                <span lang="EN-GB"
+                                                    style="font-size: 8.0pt; font-family: HelveticaNeueLT Pro 45 Lt,sans-serif; mso-bidi-font-family: Arial; color: #003468; mso-ansi-language: EN-GB; mso-no-proof: yes">PO
+                                                    Box xxxxx, xxxxxxxx, xxxxxxxxxx. Tel: +xxx xxxxxxxxx Fax: +xxx
+                                                    xxxxxxxx, www.xxxxxxx.com
+                                                    <o:p>
+                                                    </o:p>
+                                                </span>
+                                            </p>
+
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+    </form>
+
+
+</body>
+
+</html>
