@@ -10,6 +10,5 @@ A new motor policy quotation and issuance engine for AMAN insurance platform.
 
 ### Prerequisites are the following:
 1. Oracle client with version depending on the AMAN Oracle database version<br>
-2. MySQL database engine to setup local tables<br>
-3. Microsoft IIS server with version 7.x and above<br> 
-4. Python 2.7.x or 3.7.x and above<br>
+2. Microsoft IIS server with version 7.x and above<br> 
+3. Python 2.7.x or 3.7.x and above<br>
